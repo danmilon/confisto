@@ -36,6 +36,7 @@ describe('confisto', function () {
               { arch: 'arm'
               , instr: 'risc'
               }
+          , logFile: null
           })
         done()
       }

@@ -1,6 +1,7 @@
 {
   "name": "confisto",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "author": "Dan Milon <danmilon@gmail.com>",
   "description": "Configuration loader with directory support and a clean API",
   "main": "lib/confisto.js",
   "scripts": {
@@ -24,6 +25,5 @@
     "should": "0.6.3",
     "mocha": "1.3.0"
   },
-  "author": "Dan Milon",
   "license": "MIT"
 }
