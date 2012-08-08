@@ -71,3 +71,36 @@ will print
       }
     , users: ['dan', 'joe']
     }
+
+
+### confisto.keep(ns, config)
+
+Keep configuration object `config` under namespace `ns` so that it can be obtained from other files.
+
+### confisto.get(ns)
+
+Get the configuration object of namespace `ns`
+
+## Example
+
+```javascript
+// file1.js
+var confisto = require('confisto')
+  , func     = require('./file2')
+
+confisto({
+  file: 'main.conf'
+}, function (err, config) {
+  // handle err
+  confisto.keep('main', config)
+  func()
+})
+
+// file2.js
+var confisto = require('confisto')
+
+module.exports = function () {
+  var mainConfig = config.get('main')
+  console.log(mainConfig.logFile)
+}
+```
