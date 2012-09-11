@@ -18,7 +18,7 @@ The API is fairly simple. The module exports a single function `confisto`.
 
 * `file`: File to load that contains the main configuration.
 * `dir`: Directory to read and load that contains many seperate configuration files. Optional.
-* `defaults`: Object with default values for each configuration parameter. Optional.
+* `defaults`: Object with default values or path (string) to a file with default values. Optional.
 * `parser`: Parser to use while loading files Optional. (default `'json'`)
 
 #### cb(err, config)

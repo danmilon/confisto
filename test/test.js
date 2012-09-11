@@ -21,6 +21,19 @@ describe('confisto', function () {
     })
   })
 
+  it('should accept path to file with defaults value', function (done) {
+    confisto(
+    { file: __dirname + '/files/main.conf'
+    , defaults: __dirname + '/files/defaults.conf'
+    }
+    , function (err, config) {
+      should.ifError(err)
+      config.default.should.be.equal('sexy')
+      config.host.should.be.equal('localhost')
+      done()
+    })
+  })
+
   it('should work with included test', function (done) {
     confisto(
     { file: __dirname + '/files/main.conf'

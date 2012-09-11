@@ -1,6 +1,6 @@
 {
   "name": "confisto",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Dan Milon <danmilon@gmail.com>",
   "description": "Configuration loader with directory support and a clean API",
   "main": "lib/confisto.js",
