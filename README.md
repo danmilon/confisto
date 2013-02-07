@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/danmilon/confisto.png)](http://travis-ci.org/danmilon/confisto)
 # Confisto
 
 Confisto is a simple configuration loader for node.
